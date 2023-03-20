@@ -4,13 +4,13 @@ variable "azure_region" {
   # To get names of Azure Region : az account list-locations
   # To check support of Availability Zone in the Azure Region see https://docs.microsoft.com/bs-latn-ba/azure/availability-zones/az-overview
   type    = string
-  default = "westeurope"
+  default = "eastus"
 }
 
 #  Resource Group Name
 variable "resource_group" {
   type    = string
-  default = "RG-AKSCluster"
+  default = "rg-az-workshop-lll"
 }
 
 # Virtual Network name
@@ -23,7 +23,7 @@ variable "aks_vnet_name" {
 # AKS Cluster name
 variable "cluster_name" {
   type    = string
-  default = "AKS-000"
+  default = "AKS-000-lll"
 }
 
 #AKS DNS name
@@ -74,7 +74,7 @@ variable "admin_username" {
 variable "kubernetes_version" {
   description = "Version of Kubernetes to deploy"
   type        = string
-  default     = "1.22.6"
+  default     = "1.24.9"
 }
 
 
@@ -97,7 +97,7 @@ variable "defaultpool-vmsize" {
   # check VM SKU : az vm list-skus -l NAMEOFAZUREREGION -o table
   # check if the choosen family is available in Azure region you selected : az vm list-usage --location NAMEOFAZUREREGION -o table
   type    = string
-  default = "Standard_D2s_v3"
+  default = "Standard_D2_v2"
 }
 
 variable "defaultpool-ostype" {

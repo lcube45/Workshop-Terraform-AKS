@@ -9,11 +9,11 @@ variable "azureRegion" {
 #  Resource Group Name
 variable "resourceGroupName" {
   type    = string
-  default = "az-workshop-rg"
+  default = "rg-az-workshop-lll"
 }
 
 #  Storage Account Name
 variable "storageAccountBackendTerraform" {
   type    = string
-  default = "azworkshopcslll" # IMPORTANT mettre ici un nom unique. cf https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming#example-names-storage
+  default = "csazworkshoplll" # IMPORTANT mettre ici un nom unique. cf https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming#example-names-storage
 }
